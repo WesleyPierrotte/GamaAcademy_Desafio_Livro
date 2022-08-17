@@ -41,13 +41,6 @@ public class LivroController {
 		List<Livro> livros = livroRepository.findByTitulo(titulo);
 		return LivroDto.converter(livros);
 		// uri = http://localhost:8080/livroTitulo?titulo=Orientação+a+Objeto
-	}
-	
-	@PostMapping("/livro")
-	public String inserirLivro(@RequestBody Livro livro) {
-		System.out.println("Titulo "+ livro.exibirLivro());
-		
-		return "Livro cadastrado!";
-	}
+	}	
 
 }
