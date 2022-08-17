@@ -1,5 +1,5 @@
-INSERT INTO USUARIO(nome, email, senha) VALUES('Fulano', 'fulano@test.com', '123');
-INSERT INTO USUARIO(nome, email, senha) VALUES('Beltrano', 'beltrano@test.com', '1234');
+INSERT INTO USUARIO(nome, email, telefone,cpf,rg,endereco) VALUES('Fulano', 'fulano@test.com', '55-xx-xxxxxxxxx','111111111-11','1010101010','Av.Sucesso 88- Bairro Vitoria - SP-SP/BR');
+INSERT INTO USUARIO(nome, email, telefone,cpf,rg,endereco) VALUES('Beltrano', 'beltrano@test.com', '55-xx-xxxxxxxxx','222222222-22','20202020', 'Rua.Bom Gosto 99- Bairro Legal - POA-RS/BR');
 
 INSERT INTO AUTOR(nome) VALUES('Rodrigo Turini');
 INSERT INTO AUTOR(nome) VALUES('Mauricio Aniche');
