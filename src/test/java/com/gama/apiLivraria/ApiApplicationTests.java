@@ -24,12 +24,12 @@ class ApiApplicationTests {
 	@Test
 	void buscaLivroPorAutor() throws JSONException {
 		// Arrange
-		String autor = "Machado de Assis";
+		String autor = "Rodrigo Turini";
 		
 		// Act
 		List<Livro> livros = livroRepository.findByAutorNome(autor);
 		var atual = livros.toString();
-		String esperado = "[id=1, titulo=Orientação a Objeto, autor=Autor Machado de Assis, "
+		String esperado = "[id=1, titulo=Orientação a Objeto, autor=Autor Rodrigo Turini, "
 				+ "edicao=10, editora=Casa do Codigo, isbn=123, status=DISPONIVEL]";
 		
 		//JSONObject my_obj = new JSONObject();
@@ -51,13 +51,27 @@ class ApiApplicationTests {
 	@Test
 	void exibirLivroMetodoClasseLivro() throws JSONException {
 		// Arrange
-		Livro livro = new Livro(1L,"Orientação a Objeto", new Autor(1L,"Pedro"), 
+		Livro livro = new Livro(1L,"Orientação a Objeto", new Autor(1L,"Rodrigo Turini"), 
 				new Usuario(1L,"Fulano","fulano@test.com","1234"), 1, "Casa do Codigo", 123, StatusLivro.DISPONIVEL);
 		
 		// Act
 		var atual = livro.exibirLivro();
-		String esperado = "Orientação a Objeto / Autor Pedro / 1 / Casa do Codigo / 123 / DISPONIVEL";
+		String esperado = "Orientação a Objeto / Autor Rodrigo Turini / 1 / Casa do Codigo / 123 / DISPONIVEL";
 		
+		// Assert		
+		assertThat(atual).isEqualTo(esperado);		
+	}
+	
+	@Test
+	void buscaLivroPorTitulo() throws JSONException {
+		// Arrange
+		String titulo = "TDD";
+		
+		// Act
+		List<Livro> livros = livroRepository.findByTitulo(titulo);
+		var atual = livros.toString();
+		String esperado = "[id=2, titulo=TDD, autor=Autor Mauricio Aniche, "
+				+ "edicao=11, editora=Casa do Codigo, isbn=123, status=VENDIDO]";	
 		// Assert		
 		assertThat(atual).isEqualTo(esperado);		
 	}
