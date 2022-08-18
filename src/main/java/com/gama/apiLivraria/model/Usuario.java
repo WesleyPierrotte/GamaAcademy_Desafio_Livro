@@ -117,8 +117,8 @@ public class Usuario {
 
 	@Override
 	public String toString() {
-		return "Usuario [id=" + id + ", nome=" + nome + ", email=" + email + ", telefone=" + telefone + ", cpf=" + cpf
-				+ ", rg=" + rg + ", endereco=" + endereco + ", movimenta=" + movimenta + "]";
+		return "id=" + id + ", nome=" + nome + ", email=" + email + ", telefone=" + telefone + ", cpf=" + cpf
+				+ ", rg=" + rg + ", endereco=" + endereco;
 	}
  
 }
