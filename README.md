@@ -16,7 +16,7 @@
 
 * TERMINAL ECLIPSE 
 
-## Evidência - Cucumber
+## Evidência - Cucumber (unitário)
 
 <img src="/img/Cucumber_test.png" width="550" height="300">
 
@@ -28,6 +28,6 @@
 
 <img src="/img/Run_Livro.png" width="550" height="300">
 
-## Evidência - Run tests
+## Evidência - Testes de integração e unitário
 
 <img src="/img/Testes_Livro.png" width="550" height="300">
