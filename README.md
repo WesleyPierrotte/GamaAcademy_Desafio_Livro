@@ -16,6 +16,10 @@
 
 * TERMINAL ECLIPSE 
 
+## Evidência - Coverage
+
+<img src="/img/Coverage.png" width="550" height="300">
+
 ## Evidência - Run application
 
 <img src="/img/Run_Livro.png" width="550" height="300">
