@@ -22,15 +22,13 @@ public class UsuarioTest {
         @DisplayName("Entao terei meus daddos no sistema")
         public void deveReceberAcesso() {
 
-            usuario.setNome("Cicrano");
-            usuario.setEmail("cicrano@test.com");
-            usuario.setTelefone("55-xx-xxxxxxxxx");
-            usuario.setCpf("44444444-44");
-            usuario.setRg("404040");
-            usuario.setEndereco("Rua Chaves s/n Bairro Cadeado RJ/RJ-BR");
+        	usuario.adicionaUsuario(new Usuario(1L,"Cicrano","cicrano@test.com","55-xx-xxxxxxxxx",
+        			"44444444-44","404040","Rua Chaves s/n Bairro Cadeado RJ/RJ-BR"));
             
-            String esperado = "Cicrano";
-            var atual = usuario.getNome().toString();
+            String esperado = "[id=1, nome=Cicrano, email=cicrano@test.com, telefone=55-xx-xxxxxxxxx, "
+            		+ "cpf=44444444-44, rg=404040, endereco=Rua Chaves s/n Bairro Cadeado RJ/RJ-BR]";
+            
+            var atual = usuario.getUsuarios().toString();
 
             assertEquals(esperado, atual);
         }

@@ -1,5 +1,8 @@
 package com.gama.apiLivraria.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +20,7 @@ public class Usuario {
     private String cpf;
     private String rg;
     private String endereco;
+    private List<Usuario> usuarios = new ArrayList<>();
     @ManyToOne
     private MovimentaLivro movimenta;
     
@@ -113,12 +117,24 @@ public class Usuario {
 	public void setMovimenta(MovimentaLivro movimenta) {
 		this.movimenta = movimenta;
 	}
+	
+	public List<Usuario> getUsuarios() {
+		return usuarios;
+	}
 
+	public void setUsuarios(List<Usuario> usuarios) {
+		this.usuarios = usuarios;
+	}
 
+    public Usuario adicionaUsuario(Usuario usuario) {  	
+    	this.usuarios.add(usuario);
+    	return this;
+    }
+    
 	@Override
 	public String toString() {
 		return "id=" + id + ", nome=" + nome + ", email=" + email + ", telefone=" + telefone + ", cpf=" + cpf
 				+ ", rg=" + rg + ", endereco=" + endereco;
 	}
- 
+
 }
