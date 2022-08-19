@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Usuario {
@@ -20,6 +21,7 @@ public class Usuario {
     private String cpf;
     private String rg;
     private String endereco;
+    @OneToMany
     private List<Usuario> usuarios = new ArrayList<>();
     @ManyToOne
     private MovimentaLivro movimenta;

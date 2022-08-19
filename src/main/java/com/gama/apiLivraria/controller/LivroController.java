@@ -33,7 +33,7 @@ public class LivroController {
 	public List<LivroDto> consultaLivroAutor(String autor) {
 		List<Livro> livros = livroRepository.findByAutorNome(autor);
 		return LivroDto.converter(livros);
-		// uri = http://localhost:8080/livroAutor?autor=Machado+de+Assis
+		// uri = http://localhost:8080/livroAutor?autor=Rodrigo+Turini
 	}
 	
 	@GetMapping("/livroTitulo")
