@@ -19,14 +19,18 @@ public class LivroDto {
 	private Long id;
 	private String titulo;
     private Autor autor;
+    private int edicao;
     private String editora;
+    private int isbn;
     private StatusLivro statusLivro = StatusLivro.DISPONIVEL;
     
     public LivroDto(Livro livro) {
 		this.id = livro.getId();
 		this.titulo = livro.getTitulo();
 		this.autor = livro.getAutor();
+		this.edicao = livro.getEdicao();
 		this.editora = livro.getEditora();
+		this.isbn = livro.getIsbn();
 		this.statusLivro = livro.getStatus();
 	}
     
@@ -39,8 +43,14 @@ public class LivroDto {
 	public Autor getAutor() {
 		return autor;
 	}
+	public int getEdicao() {
+		return edicao;
+	}
 	public String getEditora() {
 		return editora;
+	}
+	public int getIsbn() {
+		return isbn;
 	}
 	public StatusLivro getStatusLivro() {
 		return statusLivro;

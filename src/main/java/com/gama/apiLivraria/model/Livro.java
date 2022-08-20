@@ -1,5 +1,8 @@
 package com.gama.apiLivraria.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -27,6 +30,20 @@ public class Livro {
     private StatusLivro status = StatusLivro.DISPONIVEL;
     @ManyToOne
     private MovimentaLivro movimentaLivro;
+    @OneToMany
+    private List<Livro> livros;
+    
+    public Livro(Long id, String titulo, Autor autor, int edicao, String editora, int isbn,
+			StatusLivro status) {
+		super();
+		this.id = id;
+		this.titulo = titulo;
+		this.autor = autor;
+		this.edicao = edicao;
+		this.editora = editora;
+		this.isbn = isbn;
+		this.status = status;
+	}
 
    public Livro(Long id, String titulo, Autor autor, Usuario usuario, int edicao, String editora, int isbn,
 			StatusLivro status) {
@@ -40,11 +57,32 @@ public class Livro {
 		this.isbn = isbn;
 		this.status = status;
 	}
+   
+   public Livro( String titulo, Autor autor, Usuario usuario, int edicao, String editora, int isbn,
+			StatusLivro status) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.usuario = usuario;
+		this.edicao = edicao;
+		this.editora = editora;
+		this.isbn = isbn;
+		this.status = status;
+		this.livros = new ArrayList<Livro>();
+	}
     
-    public Livro() {
-		
+    public Livro(String titulo, Autor autor, int edicao, String editora, int isbn, StatusLivro status) {
+    	this.titulo = titulo;
+		this.autor = autor;
+		this.edicao = edicao;
+		this.editora = editora;
+		this.isbn = isbn;
+		this.status = status;
 	}
 
+    public Livro() {
+    	
+	}
+    
 	public Long getId() {
 		return id;
 	}
@@ -120,11 +158,19 @@ public class Livro {
 	public String exibirLivro() {
 		return titulo + " / " + autor + " / " + edicao + " / " + editora + " / " + isbn + " / " + status;
 	}
+	
+	public String exibirLivroPorAutor(Autor autor) {
+		return titulo + " / " + autor.getNome() + " / " + edicao + " / " + editora + " / " + isbn + " / " + status;
+	}
 
 	@Override
 	public String toString() {
-		return "id=" + id + ", titulo=" + titulo + ", autor=" + autor + ", edicao="
+		return "id=" + id + ", titulo=" + titulo + ", " + autor + ", edicao="
 				+ edicao + ", editora=" + editora + ", isbn=" + isbn + ", status=" + status;
+	}
+
+	public List<Livro> getLivros() {
+		return livros;
 	}
 
 }
