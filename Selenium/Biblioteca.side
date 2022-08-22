@@ -1,0 +1,460 @@
+{
+  "id": "155e09c7-fd9d-4705-bb48-ea2631df5c23",
+  "version": "2.0",
+  "name": "Biblioteca",
+  "url": "https://www.c-sharpcorner.com",
+  "tests": [{
+    "id": "67ed44bc-0182-4ca9-9267-84dbb98187bc",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "09076468-1c72-47ff-bc70-6f68cc126594",
+    "name": "TC001-Teste-compra-com-login-FB",
+    "commands": [{
+      "id": "f7f01a3c-7685-483a-968a-28c227151916",
+      "comment": "",
+      "command": "open",
+      "target": "/ebooks/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c59bc471-bc5c-42d1-a256-25129d21fce3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1118x722",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4409508-ec3d-41f4-84eb-e42dcec55ed3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(4) img",
+      "targets": [
+        ["css=li:nth-child(4) img", "css:finder"],
+        ["xpath=//ul[@id='ulEbookList']/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd083e33-5246-46fd-ac3a-6b8dc6730deb",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) img",
+      "targets": [
+        ["css=li:nth-child(1) img", "css:finder"],
+        ["xpath=//ul[@id='ulEbookList']/li/a/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c6d3ae6-d301-4afe-9dcc-8a0575c7e4a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCheckout",
+      "targets": [
+        ["id=btnCheckout", "id"],
+        ["linkText=Buy", "linkText"],
+        ["css=#btnCheckout", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy')]", "xpath:link"],
+        ["xpath=//a[@id='btnCheckout']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_ContentMain_divAuthor']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.c-sharpcorner.com/userregistration/logincheck.aspx?returnurl=https://www.c-sharpcorner.com/ebooks/wpf-simplified-build-windows-apps-using-csharp-and-xaml')]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fe3c1b5-384f-461a-8b00-54470d361fee",
+      "comment": "",
+      "command": "click",
+      "target": "id=facebookLogin",
+      "targets": [
+        ["id=facebookLogin", "id"],
+        ["linkText=Facebook Login", "linkText"],
+        ["css=#facebookLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Facebook Login')]", "xpath:link"],
+        ["xpath=//a[@id='facebookLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='OldHeader']/div[3]/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void()')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Facebook Login')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3138",
+      "windowTimeout": 2000
+    }, {
+      "id": "4eecf4ac-d5cb-4232-a516-f027ea98a0f9",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "729e2a02-11b6-47fc-8533-b47ab9001b7d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3138}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a697201-6d54-49f2-85c5-42d9acce5a3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lq84ybu9",
+      "targets": [
+        ["css=.lq84ybu9", "css:finder"],
+        ["xpath=//div[@id='mount_0_0_Y+']/div/div/div/div/div/div/div/div/div[3]/div[3]/div/div/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aef95a91-f8d5-400d-8bb5-efda99ceae62",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "597fe7b7-8299-453b-9398-d7d70eb33a55",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "089092d8-467c-4e33-be74-fa5416afd44e",
+    "name": "TC002 - Teste-compra-com-login-google",
+    "commands": [{
+      "id": "5f959b48-8644-4a1b-b895-ecb69dea22a1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4a510ba-d64e-4abb-8873-d826ef3587ef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1124x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "689b237d-f54e-4c4a-9d9e-ab2a7797a66d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BOOKS",
+      "targets": [
+        ["linkText=BOOKS", "linkText"],
+        ["css=li:nth-child(9) > .menu-color-default", "css:finder"],
+        ["xpath=//a[contains(text(),'BOOKS')]", "xpath:link"],
+        ["xpath=//ul[@id='MenuControl1']/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.c-sharpcorner.com/ebooks')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BOOKS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea536537-914f-4cb2-9caa-b6952424ebf0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=li:nth-child(2) .ebook-title > span",
+      "targets": [
+        ["css=li:nth-child(2) .ebook-title > span", "css:finder"],
+        ["xpath=//ul[@id='ulEbookList']/li[2]/a/div/h3/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/div/h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Chapter I: Introduction to WPF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e159c845-b64e-42eb-b82c-58973560416c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=li:nth-child(2) .ebook-title > span",
+      "targets": [
+        ["css=li:nth-child(2) .ebook-title > span", "css:finder"],
+        ["xpath=//ul[@id='ulEbookList']/li[2]/a/div/h3/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/div/h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Chapter I: Introduction to WPF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "258e890e-794f-4676-a7b0-058d9221a181",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) img",
+      "targets": [
+        ["css=li:nth-child(1) img", "css:finder"],
+        ["xpath=//ul[@id='ulEbookList']/li/a/img", "xpath:idRelative"],
+        ["xpath=//li/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ff05509-e504-46c2-80ef-616d25d4d882",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnCheckout",
+      "targets": [
+        ["id=btnCheckout", "id"],
+        ["linkText=Buy", "linkText"],
+        ["css=#btnCheckout", "css:finder"],
+        ["xpath=//a[contains(text(),'Buy')]", "xpath:link"],
+        ["xpath=//a[@id='btnCheckout']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_ContentMain_divAuthor']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.c-sharpcorner.com/userregistration/logincheck.aspx?returnurl=https://www.c-sharpcorner.com/ebooks/wpf-simplified-build-windows-apps-using-csharp-and-xaml')]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Buy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cd38bfc-8db9-464b-8220-553df997290b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=facebookLogin",
+      "targets": [
+        ["id=facebookLogin", "id"],
+        ["linkText=Facebook Login", "linkText"],
+        ["css=#facebookLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Facebook Login')]", "xpath:link"],
+        ["xpath=//a[@id='facebookLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='OldHeader']/div[3]/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void()')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Facebook Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "315418bc-65e1-4f88-b6fb-c185525faba5",
+      "comment": "",
+      "command": "click",
+      "target": "id=googleLogin",
+      "targets": [
+        ["id=googleLogin", "id"],
+        ["linkText=Google Login", "linkText"],
+        ["css=#googleLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Google Login')]", "xpath:link"],
+        ["xpath=//a[@id='googleLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='OldHeader']/div[3]/div[2]/div/div/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Google Login')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2202",
+      "windowTimeout": 2000
+    }, {
+      "id": "ea776604-ffe1-4250-92c9-115c4999778c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2202}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbb265f6-2ab1-436e-8f69-f1f2f0f95236",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wLBAL",
+      "targets": [
+        ["css=.wLBAL", "css:finder"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li/div/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b4b8b5f3-23d2-4fcc-b723-70c3722ae6c9",
+    "name": "Teste_compra_com_linkedin",
+    "commands": [{
+      "id": "60d01e60-5dd8-4a74-b696-1bc0db44a328",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "462d212d-e9a7-498a-a6c8-f3fefa3e19d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1118x722",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6a82f6c-90f3-4f6e-aad4-b031152f8110",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BOOKS",
+      "targets": [
+        ["linkText=BOOKS", "linkText"],
+        ["css=li:nth-child(9) > .menu-color-default", "css:finder"],
+        ["xpath=//a[contains(text(),'BOOKS')]", "xpath:link"],
+        ["xpath=//ul[@id='MenuControl1']/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.c-sharpcorner.com/ebooks')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BOOKS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf6cbe52-deba-404a-888d-4bd5f7ed8392",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .price",
+      "targets": [
+        ["css=li:nth-child(7) .price", "css:finder"],
+        ["xpath=//ul[@id='ulEbookList']/li[7]/a/div/div", "xpath:idRelative"],
+        ["xpath=//li[7]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10b162c1-d4d7-43be-974b-8b78f05beb3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnDownload",
+      "targets": [
+        ["id=btnDownload", "id"],
+        ["linkText=Download", "linkText"],
+        ["css=#btnDownload", "css:finder"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//a[@id='btnDownload']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_ContentMain_divAuthor']/a", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8877d112-d357-4da5-b3bc-314a5ff2ed65",
+      "comment": "",
+      "command": "click",
+      "target": "id=linkedInLogin",
+      "targets": [
+        ["id=linkedInLogin", "id"],
+        ["linkText=LinkedIn Login", "linkText"],
+        ["css=#linkedInLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'LinkedIn Login')]", "xpath:link"],
+        ["xpath=//a[@id='linkedInLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='OldHeader']/div[3]/div[2]/div/div/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'LinkedIn Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12e9c48f-70be-44df-b5c5-cdabc33dcb21",
+      "comment": "",
+      "command": "click",
+      "target": "id=oauth__auth-form__submit-btn",
+      "targets": [
+        ["id=oauth__auth-form__submit-btn", "id"],
+        ["name=action", "name"],
+        ["css=#oauth__auth-form__submit-btn", "css:finder"],
+        ["xpath=//button[@id='oauth__auth-form__submit-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='oauth__auth-form']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Permitir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e3af6a-3c08-47b7-9afe-137f9ca16cbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@onclick='return acceptGDPR();']", "xpath:attributes"],
+        ["xpath=//div[@id='pp_popup_outer']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Got it')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab4dec7b-45fe-4c8d-b440-9e153173b0b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BOOKS",
+      "targets": [
+        ["linkText=BOOKS", "linkText"],
+        ["css=li:nth-child(9) > .menu-color-default", "css:finder"],
+        ["xpath=//a[contains(text(),'BOOKS')]", "xpath:link"],
+        ["xpath=//ul[@id='MenuControl1']/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.c-sharpcorner.com/ebooks')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BOOKS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc17db42-2db4-4c75-899d-1859b2266dc4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0734a6f6-f502-4e93-bbb6-a77446f22e1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) img",
+      "targets": [
+        ["css=li:nth-child(7) img", "css:finder"],
+        ["xpath=//ul[@id='ulEbookList']/li[7]/a/img", "xpath:idRelative"],
+        ["xpath=//li[7]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9ab4905-02ac-46cf-a179-44039e52a841",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnDownload",
+      "targets": [
+        ["id=btnDownload", "id"],
+        ["linkText=Download", "linkText"],
+        ["css=#btnDownload", "css:finder"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//a[@id='btnDownload']", "xpath:attributes"],
+        ["xpath=//div[@id='ctl00_ContentMain_divAuthor']/a", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Download')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3167",
+      "windowTimeout": 2000
+    }, {
+      "id": "8a6f9fae-60ff-4d28-9a1e-7f9336b8b469",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bd1b5e7-5eb4-42d8-b1ab-27be45d187e5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3167}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57113791-cefb-4f51-a7ae-040acdf29789",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29eb14f7-8b81-44f2-96e1-16c65b0910e4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c98e5a9b-3b5a-4867-a1e7-e0e089fadd67",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["67ed44bc-0182-4ca9-9267-84dbb98187bc"]
+  }],
+  "urls": ["https://www.c-sharpcorner.com/"],
+  "plugins": []
+}
